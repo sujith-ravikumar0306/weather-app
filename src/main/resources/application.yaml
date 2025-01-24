@@ -20,4 +20,7 @@ spring:
 #    org.springframework.web: debug # Enable logging for web-related operations
 
 weather_api:
-  api_key: 99e8r8ewfjbf8uer9ewur9ewroiuer # Replace with your OpenWeatherMap API Key
+  api_key: 90992c6baeb4ddb7340aad0cd27785b0 # Replace with your OpenWeatherMap API Key
+
+locationiq_api:
+  api_key: pk.0c2c75f77e846dfbd20244332268d0fe # Replace with your LocationIQ API Key

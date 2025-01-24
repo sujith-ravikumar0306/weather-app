@@ -3,6 +3,8 @@ package com.example.weather.weather_app.util;
 import com.example.weather.weather_app.constants.WeatherConstants.ResponseKeys;
 import com.example.weather.weather_app.payload.*;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -100,5 +102,19 @@ public class WeatherUtil
 
 
         return new Coordinates(latitude, longitude);
+    }
+
+    public static List<CityObject> getCitiesListFromResponseMap(List<Map<String, Object>> response)
+    {
+        List<CityObject> citiesOutput =   new LinkedList<>();
+
+        for(Map<String, Object> city : response)
+        {
+            Map<String, Object> address =   (Map)city.get("address");
+
+            citiesOutput.add(new CityObject((String) address.get("name"), (String) address.get("country")));
+        }
+
+        return citiesOutput;
     }
 }

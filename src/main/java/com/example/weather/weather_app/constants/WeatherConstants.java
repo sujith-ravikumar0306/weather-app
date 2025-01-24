@@ -2,7 +2,8 @@ package com.example.weather.weather_app.constants;
 
 public class WeatherConstants
 {
-    public static final String OPEN_WEATHER_API_URL =   "https://api.openweathermap.org/data/2.5/weather?q=";
+    public static final String GET_WEATHER_DATA_ENDPOINT    =   "https://api.openweathermap.org/data/2.5/weather?q=";
+    public static final String SEARCH_CITIES_ENDPOINT       =   "https://api.locationiq.com/v1/autocomplete?key=";
 
     public static class ResponseKeys
     {
