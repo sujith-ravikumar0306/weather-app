@@ -1,0 +1,23 @@
+server:
+  port: 8080 # Application will run on this port
+
+spring:
+  application:
+    name: weather-app # Name of the application
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false # Prevent Spring from treating static paths like API paths
+  profiles:
+    active: dev # Set the active profile (dev, test, or prod)
+
+#logging:
+#  level:
+#    root: debug
+#    org.springframework.web: debug # Enable logging for web-related operations
+
+weather_api:
+  api_key: 99e8r8ewfjbf8uer9ewur9ewroiuer # Replace with your OpenWeatherMap API Key
